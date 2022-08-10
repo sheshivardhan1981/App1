@@ -9,4 +9,10 @@ resource "aws_subnet" "sn1"{
 	avilability_zone="ap-south-1a"
 	
 }
+resource "aws_subnet" "sn2"{
+	vpc_id=aws_vpc.vpc1.id
+	cidr_block="10.0.1.0/24"
+	avilability_zone="ap-south-1a"
+	
+}
 	
