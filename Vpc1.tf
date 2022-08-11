@@ -1,9 +1,11 @@
 variable "v_vpc_cidr"{
 }
+This is Sheshi Branch Line
 resource "aws_vpc" "vpc2"{
 	cidr_block=var.v_vpc_cidr
 	tags={
-		Name="VPC1"
+		Name="VPC-TAGS"
+		ENV="VPC-TAGS"
 	}
 }
 resource "aws_subnet" "sn1"{
