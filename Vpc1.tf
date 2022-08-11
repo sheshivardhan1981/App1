@@ -4,9 +4,13 @@ This is Sheshi Branch Line
 resource "aws_vpc" "vpc2"{
 	cidr_block=var.v_vpc_cidr
 	tags={
-		Name="VPC-TAGS"
 		ENV="VPC-TAGS"
+		Name="Master-Changes"
+
 	}
+}
+resource "aws_eip" "myeip"{
+
 }
 resource "aws_subnet" "sn1"{
 	vpc_id=aws_vpc.vpc1.id
