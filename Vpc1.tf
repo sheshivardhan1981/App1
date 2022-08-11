@@ -1,7 +1,6 @@
 variable "v_vpc_cidr"{
 }
-/* Tags Added by Harsha */
-resource "aws_vpc" "vpc1"{
+resource "aws_vpc" "vpc2"{
 	cidr_block=var.v_vpc_cidr
 	tags={
 		Name="VPC1"
